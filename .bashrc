@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:$PATH:$HOME/kbin
+export PATH=/usr/local/bin:$PATH:$HOME/.zbin/
 
 set -o vi
 

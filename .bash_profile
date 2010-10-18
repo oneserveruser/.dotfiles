@@ -1,3 +1,3 @@
-# sources .bashrc for when bash is started as a login shell
+# sources .bashrc in $HOME
 
-. ~/.bashrc
+. $HOME/.bashrc
