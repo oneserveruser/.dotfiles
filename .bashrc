@@ -16,6 +16,8 @@ alias gc="gem cleanup"
 alias gl="gem list"
 alias gu="gem update"
 
+alias gpom="git push origin master"
+
 alias ru="rvm update"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
