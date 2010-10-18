@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [[ -L $HOME/.bashrc ]]
+    then echo ".bashrc exists" && exit
+    else
+	echo ".bashrc does not exist and will be created" && 
+	ln -s $HOME/.zbin/.bashrc $HOME/.bashrc
+fi
+
+
+if [[ -L $HOME/.bash_profile ]]
+    then echo ".bash_profile exists" && exit
+    else
+	echo ".bash_profile does not exist and will be created" && 
+	ln -s $HOME/.zbin/.bash_profile $HOME/.bash_profile
+fi
