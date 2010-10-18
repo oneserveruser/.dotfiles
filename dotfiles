@@ -14,3 +14,19 @@ if [[ -L $HOME/.bash_profile ]]
 	echo ".bash_profile does not exist and will be created" && 
 	ln -s $HOME/.zbin/.bash_profile $HOME/.bash_profile
 fi
+
+
+if [[ -L $HOME/.vimrc ]]
+    then echo ".vimrc exists" && exit
+    else
+	echo ".vimrc does not exist and will be created" && 
+	ln -s $HOME/.zbin/.vimrc $HOME/.vimrc
+fi
+
+
+if [[ -L $HOME/.gvimrc ]]
+    then echo ".gvimrc exists" && exit
+    else
+	echo ".gvimrc does not exist and will be created" && 
+	ln -s $HOME/.zbin/.gvimrc $HOME/.gvimrc
+fi
