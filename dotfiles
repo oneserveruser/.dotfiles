@@ -1,32 +1,18 @@
 #!/usr/bin/env bash
 
-if [[ -L $HOME/.bashrc ]]
-    then echo ".bashrc exists" && exit
+# checks to see if symbolic links for
+# personal dotfiles exist in $HOME
+# creates symbolic links from dotfiles in .zbin if not
+
+cd $HOME/.zbin
+
+for f in .bashrc .bash_profile .vimrc .gvimrc
+do
+    if [[ -L $HOME/${f} ]]
+    then echo "${f} exists"
     else
-	echo ".bashrc does not exist and will be created" && 
-	ln -s $HOME/.zbin/.bashrc $HOME/.bashrc
-fi
+	echo "${f} will be created" &&
+	    ln -s $HOME/.zbin/${f} $HOME/${f}
+    fi
+done
 
-
-if [[ -L $HOME/.bash_profile ]]
-    then echo ".bash_profile exists" && exit
-    else
-	echo ".bash_profile does not exist and will be created" && 
-	ln -s $HOME/.zbin/.bash_profile $HOME/.bash_profile
-fi
-
-
-if [[ -L $HOME/.vimrc ]]
-    then echo ".vimrc exists" && exit
-    else
-	echo ".vimrc does not exist and will be created" && 
-	ln -s $HOME/.zbin/.vimrc $HOME/.vimrc
-fi
-
-
-if [[ -L $HOME/.gvimrc ]]
-    then echo ".gvimrc exists" && exit
-    else
-	echo ".gvimrc does not exist and will be created" && 
-	ln -s $HOME/.zbin/.gvimrc $HOME/.gvimrc
-fi
