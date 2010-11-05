@@ -32,7 +32,9 @@ set nu " displays line number in the left margin
 " set nowrap lines continue beyond window edge
 " set wrap! same as nowrap
 set wrap
-" set wrapmargin=3
+" set wrapmargin=3	
+" wrapmargin option causes linebreak at screen edge
+" before reaching the end of sentence
 
 " set showmode
 " set sm	" show match
