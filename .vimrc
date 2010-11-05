@@ -1,6 +1,6 @@
 set nocompatible
 set encoding=utf-8
-set backspace=indent,eol,start
+" set backspace=indent,eol,start
 
 call pathogen#runtime_append_all_bundles() 
 call pathogen#helptags()
@@ -32,7 +32,7 @@ set nu " displays line number in the left margin
 " set nowrap lines continue beyond window edge
 " set wrap! same as nowrap
 set wrap
-set wrapmargin=3
+" set wrapmargin=3
 
 " set showmode
 " set sm	" show match
