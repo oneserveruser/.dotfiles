@@ -17,7 +17,7 @@ set autoindent
 set shiftwidth=4
 set hlsearch
 set incsearch
-set textwidth=70
+" set textwidth=70
 
 set history=50
 set ruler
