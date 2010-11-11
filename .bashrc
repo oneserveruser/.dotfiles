@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.zbin/
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin/
 
 export EDITOR=/usr/local/bin/mvim
 

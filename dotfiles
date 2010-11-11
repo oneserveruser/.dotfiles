@@ -2,9 +2,9 @@
 
 # checks to see if symbolic links for
 # personal dotfiles exist in $HOME
-# creates symbolic links from dotfiles in .zbin if not
+# creates symbolic links from dotfiles in $HOME/bin if not
 
-cd $HOME/.zbin
+cd $HOME/bin
 
 for f in .bashrc .bash_profile .vimrc .gvimrc
 do
@@ -12,7 +12,7 @@ do
     then echo "${f} exists"
     else
 	echo "${f} will be created" &&
-	    ln -s $HOME/.zbin/${f} $HOME/${f}
+	    ln -s $HOME/bin/${f} $HOME/${f}
     fi
 done
 
