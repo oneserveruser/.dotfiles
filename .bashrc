@@ -1,5 +1,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.zbin/
 
+export EDITOR=/usr/local/bin/mvim
+
 set -o vi
 
 # aliased commands
