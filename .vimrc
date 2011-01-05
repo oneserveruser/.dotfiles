@@ -1,11 +1,11 @@
 set nocompatible
 set encoding=utf-8
-" set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 call pathogen#runtime_append_all_bundles() 
 call pathogen#helptags()
 
-" filetype on
+filetype on
 syntax on
 filetype indent on
 filetype plugin on
@@ -14,10 +14,10 @@ set noswf "no swap file"
 set smartindent
 set autoindent
 
-set shiftwidth=4
+set shiftwidth=2
 set hlsearch
 set incsearch
-" set textwidth=70
+set textwidth=70
 
 set history=50
 set ruler
@@ -36,8 +36,8 @@ set wrap
 " wrapmargin option causes linebreak at screen edge
 " before reaching the end of sentence
 
-" set showmode
-" set sm	" show match
+set showmode
+set sm	" show match
 
 if has("gui_macvim")
 	let macvim_hig_shift_movement=1
