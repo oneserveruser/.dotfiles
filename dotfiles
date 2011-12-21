@@ -12,7 +12,7 @@ do
     then echo "${f} exists"
     else
 	echo "${f} will be created" &&
-	    ln -s $HOME/bin/${f} $HOME/${f}
+	    ln -s $HOME/dotfiles/${f} $HOME/${f}
     fi
 done
 
