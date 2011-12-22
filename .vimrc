@@ -2,9 +2,6 @@ set nocompatible
 set encoding=utf-8
 set backspace=indent,eol,start
 
-call pathogen#runtime_append_all_bundles() 
-call pathogen#helptags()
-
 filetype on
 syntax on
 filetype indent on
