@@ -6,4 +6,3 @@ eval "$(rbenv init -)"
 alias la="ls -AFG"
 alias ..="cd .."
 alias ...="cd ../.."
-
